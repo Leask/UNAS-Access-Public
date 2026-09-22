@@ -45,8 +45,7 @@ a {
 }
 
 .brand,
-.nav-links,
-.footer-links {
+.nav-links {
     display: flex;
     align-items: center;
 }
@@ -62,19 +61,16 @@ a {
     border-radius: 8px;
 }
 
-.nav-links,
-.footer-links {
+.nav-links {
     gap: 18px;
 }
 
-.nav-links a,
-.footer-links a {
+.nav-links a {
     color: var(--muted);
     text-decoration: none;
 }
 
-.nav-links a:hover,
-.footer-links a:hover {
+.nav-links a:hover {
     color: var(--accent);
 }
 
@@ -233,7 +229,7 @@ p {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 18px;
     color: var(--muted);
     font-size: 14px;
@@ -250,21 +246,17 @@ p {
     }
 
     .site-nav,
-    .footer-inner,
-    .nav-links,
-    .footer-links {
+    .nav-links {
         align-items: flex-start;
     }
 
-    .site-nav,
-    .footer-inner {
+    .site-nav {
         flex-direction: column;
         justify-content: center;
         padding: 14px 0;
     }
 
-    .nav-links,
-    .footer-links {
+    .nav-links {
         flex-wrap: wrap;
         gap: 12px;
     }
