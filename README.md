@@ -32,10 +32,9 @@ other secrets in public issues.
 
 The current privacy policy is published at:
 
-https://leask.github.io/UNAS-Access-Public/privacy/
+https://leaskh.com/UNAS-Access-Public/privacy/
 
 ## Pages
 
 This repository publishes a static GitHub Pages site from the `docs/` directory
 through the workflow in `.github/workflows/pages.yml`.
-
