@@ -1,0 +1,146 @@
+:root {
+    color-scheme: light dark;
+    --accent: #00a3ff;
+    --border: color-mix(in srgb, CanvasText 14%, transparent);
+    --muted: color-mix(in srgb, CanvasText 58%, transparent);
+    --panel: color-mix(in srgb, CanvasText 5%, Canvas);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: CanvasText;
+    background: Canvas;
+}
+
+a {
+    color: var(--accent);
+}
+
+.page {
+    width: min(880px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 72px 0;
+}
+
+.hero {
+    min-height: 68vh;
+    display: grid;
+    align-content: center;
+    gap: 18px;
+}
+
+.mark {
+    display: grid;
+    gap: 8px;
+    width: 72px;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: var(--panel);
+}
+
+.mark span {
+    display: block;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--accent);
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+h2 {
+    margin: 36px 0 8px;
+    font-size: 22px;
+    letter-spacing: 0;
+}
+
+p {
+    margin: 0 0 14px;
+    max-width: 720px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: var(--muted);
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: CanvasText;
+    text-decoration: none;
+    background: var(--panel);
+}
+
+.button.primary {
+    border-color: var(--accent);
+    color: white;
+    background: var(--accent);
+}
+
+.content {
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+}
+
+.policy .content {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.eyebrow,
+.updated,
+.footer {
+    color: var(--muted);
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.footer {
+    margin-top: 44px;
+    font-size: 14px;
+}
+
+@media (max-width: 520px) {
+    .page {
+        width: min(100% - 28px, 880px);
+        padding: 44px 0;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .actions {
+        display: grid;
+    }
+}
+
