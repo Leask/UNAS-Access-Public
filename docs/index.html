@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Primary">
+            <a class="brand" href="./">
+                <img
+                    src="./assets/logo.png"
+                    width="32"
+                    height="32"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <span>UNAS Access</span>
+            </a>
+            <div class="nav-links">
+                <a href="./">Home</a>
+                <a href="./privacy/">Privacy</a>
+                <a href="https://github.com/Leask/UNAS-Access-Public/issues">Issues</a>
+            </div>
+        </nav>
+    </header>
+
     <main class="page">
         <section class="hero">
             <img
@@ -73,31 +93,17 @@
                 </article>
             </div>
         </section>
-
-        <section class="section split">
-            <div>
-                <p class="eyebrow">Privacy</p>
-                <h2>No app backend</h2>
-            </div>
-            <p>
-                The app does not collect analytics or send your files,
-                credentials, or usage data to servers operated by us. Network
-                communication is between the local app, your UniFi hardware,
-                and official UniFi services when you choose remote sign-in.
-            </p>
-        </section>
-
-        <section class="section split">
-            <div>
-                <p class="eyebrow">Support</p>
-                <h2>Public issue tracker</h2>
-            </div>
-            <p>
-                Use GitHub Issues for bug reports, feature requests, and
-                compatibility notes. Do not post passwords, API keys, cookies,
-                or private access tokens in public issues.
-            </p>
-        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© Leask. UNAS Access is an independent app.</p>
+            <div class="footer-links">
+                <a href="./privacy/">Privacy</a>
+                <a href="https://github.com/Leask/UNAS-Access-Public/issues">Issues</a>
+                <a href="mailto:i@leaskh.com">i@leaskh.com</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
