@@ -151,7 +151,6 @@ p {
     display: grid;
     gap: 22px;
     padding: 44px 0;
-    border-top: 1px solid var(--border);
 }
 
 .section:first-of-type {
@@ -198,7 +197,6 @@ p {
 
 .content {
     padding-top: 28px;
-    border-top: 1px solid var(--border);
 }
 
 .policy .content {
