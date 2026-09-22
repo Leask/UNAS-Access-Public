@@ -1,9 +1,12 @@
 :root {
     color-scheme: light dark;
     --accent: #00a3ff;
+    --accent-2: #17c964;
+    --accent-3: #ff9f0a;
     --border: color-mix(in srgb, CanvasText 14%, transparent);
     --muted: color-mix(in srgb, CanvasText 58%, transparent);
     --panel: color-mix(in srgb, CanvasText 5%, Canvas);
+    --panel-strong: color-mix(in srgb, CanvasText 8%, Canvas);
 }
 
 * {
@@ -35,21 +38,12 @@ a {
     gap: 18px;
 }
 
-.mark {
-    display: grid;
-    gap: 8px;
-    width: 72px;
-    padding: 13px;
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    background: var(--panel);
-}
-
-.mark span {
+.app-logo {
     display: block;
-    height: 8px;
-    border-radius: 999px;
-    background: var(--accent);
+    width: 112px;
+    height: 112px;
+    border-radius: 24px;
+    box-shadow: 0 18px 48px color-mix(in srgb, #000 18%, transparent);
 }
 
 h1 {
@@ -100,6 +94,55 @@ p {
     background: var(--accent);
 }
 
+.section {
+    display: grid;
+    gap: 22px;
+    padding: 44px 0;
+    border-top: 1px solid var(--border);
+}
+
+.section:first-of-type {
+    padding-top: 56px;
+}
+
+.split {
+    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.2fr);
+    align-items: start;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.feature-grid article {
+    min-height: 152px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--panel);
+}
+
+.feature-grid article:nth-child(2) {
+    border-color: color-mix(in srgb, var(--accent-2) 36%, var(--border));
+}
+
+.feature-grid article:nth-child(3) {
+    border-color: color-mix(in srgb, var(--accent-3) 36%, var(--border));
+}
+
+.feature-grid h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.feature-grid p,
+.split p {
+    color: var(--muted);
+}
+
 .content {
     padding-top: 28px;
     border-top: 1px solid var(--border);
@@ -142,5 +185,9 @@ p {
     .actions {
         display: grid;
     }
-}
 
+    .split,
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}

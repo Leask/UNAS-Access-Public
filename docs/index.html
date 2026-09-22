@@ -9,15 +9,18 @@
 <body>
     <main class="page">
         <section class="hero">
-            <div class="mark" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <img
+                class="app-logo"
+                src="./assets/logo.png"
+                width="112"
+                height="112"
+                alt="UNAS Access"
+            >
             <h1>UNAS Access</h1>
             <p>
-                Public support and policy pages for the independent UNAS Access
-                app.
+                A fast, independent companion app for browsing files, streaming
+                media, monitoring status, and backing up photos to your UniFi
+                NAS.
             </p>
             <div class="actions">
                 <a class="button primary" href="./privacy/">Privacy Policy</a>
@@ -28,10 +31,69 @@
             </div>
         </section>
 
-        <section class="content">
-            <h2>Support</h2>
+        <section class="section">
+            <div>
+                <p class="eyebrow">Native NAS Access</p>
+                <h2>Built for daily UNAS workflows</h2>
+                <p>
+                    UNAS Access is designed for quick file browsing, media
+                    previews, transfers, and system visibility without mounting
+                    SMB or NFS over unreliable remote networks.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article>
+                    <h3>Files</h3>
+                    <p>
+                        Browse folders, preview common files, manage links, and
+                        keep routine NAS work close to the native platform UI.
+                    </p>
+                </article>
+                <article>
+                    <h3>Remote Access</h3>
+                    <p>
+                        Sign in with your UniFi account to reach your NAS
+                        through official UniFi remote access infrastructure.
+                    </p>
+                </article>
+                <article>
+                    <h3>Transfers</h3>
+                    <p>
+                        Track uploads, downloads, and background work with a
+                        focused transfer view.
+                    </p>
+                </article>
+                <article>
+                    <h3>Integrations</h3>
+                    <p>
+                        Configure Files app integration and photo/video backup
+                        behavior from one place.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section split">
+            <div>
+                <p class="eyebrow">Privacy</p>
+                <h2>No app backend</h2>
+            </div>
             <p>
-                Please use GitHub Issues for bug reports, feature requests, and
+                The app does not collect analytics or send your files,
+                credentials, or usage data to servers operated by us. Network
+                communication is between the local app, your UniFi hardware,
+                and official UniFi services when you choose remote sign-in.
+            </p>
+        </section>
+
+        <section class="section split">
+            <div>
+                <p class="eyebrow">Support</p>
+                <h2>Public issue tracker</h2>
+            </div>
+            <p>
+                Use GitHub Issues for bug reports, feature requests, and
                 compatibility notes. Do not post passwords, API keys, cookies,
                 or private access tokens in public issues.
             </p>

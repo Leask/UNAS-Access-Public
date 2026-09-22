@@ -1,14 +1,44 @@
-# UNAS Access Public
+<p align="center">
+  <img src="docs/assets/logo.png" width="128" height="128" alt="UNAS Access logo">
+</p>
 
-Public support and policy pages for UNAS Access.
+<h1 align="center">UNAS Access</h1>
 
-UNAS Access is an independent client for accessing files, media, transfers,
-and system information on a UniFi NAS. This repository is intentionally small:
-it is used for public issue tracking and for static pages required by app store
-distribution, including the privacy policy.
+<p align="center">
+  A fast, independent companion app for accessing your UniFi NAS.
+</p>
+
+<p align="center">
+  <a href="https://leaskh.com/UNAS-Access-Public/privacy/">Privacy Policy</a>
+  ·
+  <a href="https://github.com/Leask/UNAS-Access-Public/issues">Support</a>
+</p>
+
+## About
+
+UNAS Access is an independent client for accessing files, media, transfers, and
+system information on a UniFi NAS. It focuses on a native, cross-platform
+experience for day-to-day NAS access, including local connections and UniFi
+account based remote access.
+
+This public repository is used for:
+
+- Public issue tracking and feature requests.
+- Public product information.
+- Static pages required by app store distribution, including the privacy policy.
 
 UNAS Access is not affiliated with, endorsed by, or sponsored by Ubiquiti Inc.
 UniFi, UniFi Drive, and UNAS are trademarks or assets of Ubiquiti Inc.
+
+## Features
+
+- Browse files and folders on a UniFi NAS.
+- Preview common media and documents.
+- Monitor system, storage, and transfer status.
+- Use local UNAS access or UniFi account remote access.
+- Configure integrations such as Files app support and photo/video backup.
+- Keep data flows direct between your device, your NAS, and official UniFi
+  services.
 
 ## Support
 
