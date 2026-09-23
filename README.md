@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://leaskh.com/UNAS-Access-Public/privacy/">Privacy Policy</a>
+  <a href="https://unas-access.leaskh.com/privacy/">Privacy Policy</a>
   ·
   <a href="https://github.com/Leask/UNAS-Access-Public/issues">Support</a>
 </p>
@@ -62,7 +62,7 @@ other secrets in public issues.
 
 The current privacy policy is published at:
 
-https://leaskh.com/UNAS-Access-Public/privacy/
+https://unas-access.leaskh.com/privacy/
 
 ## Pages
 
